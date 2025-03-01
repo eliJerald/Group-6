@@ -3,7 +3,9 @@
 #include <limits>
 
 int secondLargest(const std::vector<int>& nums) {
-    int max = std::numeric_limits<int>::min(), second = max;
+    //ChatGPT improved
+    int max = std::numeric_limits<int>::min();
+    int second = max;
     for (int n : nums) {
         if (n > max) {
             second = max;
